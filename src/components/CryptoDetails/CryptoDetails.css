@@ -123,8 +123,7 @@
     font-size: 1.2rem;
     color: var(--negative);
   }
-
-  /* Previous styles remain the same */
+ 
 
 .chart-header {
   display: flex;
