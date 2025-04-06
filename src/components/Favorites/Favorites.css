@@ -1,0 +1,14 @@
+.favorites-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .no-favorites {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+  }

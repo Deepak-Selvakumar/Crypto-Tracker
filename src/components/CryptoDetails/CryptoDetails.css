@@ -1,0 +1,167 @@
+.crypto-details {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+  }
+  
+  .details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .crypto-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .detail-image {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .crypto-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .symbol {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  
+  .favorite-btn {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .favorite-btn.favorited {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .price-info {
+    text-align: right;
+  }
+  
+  .current-price {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .price-change {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .positive {
+    color: var(--positive);
+  }
+  
+  .negative {
+    color: var(--negative);
+  }
+  
+  .chart-section {
+    margin: 30px 0;
+  }
+  
+  .chart-section h3 {
+    margin-bottom: 15px;
+  }
+  
+  .market-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .info-card {
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+  }
+  
+  .info-card h4 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+  }
+  
+  .info-card p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .not-found {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+    color: var(--negative);
+  }
+
+  /* Previous styles remain the same */
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.time-range-selector {
+  display: flex;
+  gap: 8px;
+}
+
+.time-range-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.time-range-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.loading-chart {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
