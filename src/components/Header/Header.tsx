@@ -17,7 +17,8 @@ const Header: React.FC<HeaderProps> = ({ toggleTheme, theme }) => {
           </Link>
           <nav className="nav">
             <Link to="/">Home</Link>
-            <Link to="/all-cryptos">All Cryptos</Link>
+            <Link to="/all-cryptos">All Cryptos</Link> 
+<Link to="/watchlist">Watchlist</Link>
           </nav>
           <button onClick={toggleTheme} className="theme-toggle">
             {theme === 'light' ? '🌙' : '☀️'}

@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import AllCryptos from './pages/AllCryptos/AllCryptos';
 import CryptoPage from './pages/CryptoPage/CryptoPage';
 import { CryptoProvider } from './context/CryptoContext';
+import WatchlistPage from './pages/Watchlist/WatchlistPage';
 import './App.css';
 
 const App: React.FC = () => {
@@ -28,6 +29,7 @@ const App: React.FC = () => {
               <Route path="/" element={<Home />} />
               <Route path="/all-cryptos" element={<AllCryptos />} />
               <Route path="/crypto/:id" element={<CryptoPage />} />
+              <Route path="/watchlist" element={<WatchlistPage />} />
             </Routes>
           </main>
         </div>

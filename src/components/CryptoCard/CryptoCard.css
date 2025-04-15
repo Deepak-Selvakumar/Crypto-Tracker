@@ -1,109 +1,108 @@
 .crypto-card {
   background-color: var(--card-bg);
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: var(--shadow);
   overflow: hidden;
-  transition: transform 0.3s ease;
   border: 1px solid var(--border-color);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.crypto-card-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .crypto-card:hover {
   transform: translateY(-5px);
-}  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
 
 .card-header {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 1rem;
   border-bottom: 1px solid var(--border-color);
+  gap: 1rem;
   position: relative;
 }
 
 .crypto-image {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
-.card-header h3 {
+.coin-info {
+  flex: 1;
+}
+
+.coin-info h3 {
   margin: 0;
-  font-size: 1rem;
-  flex-grow: 1;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .symbol {
   background-color: var(--primary-color);
   color: white;
-  padding: 2px 6px;
+  padding: 2px 8px;
   border-radius: 4px;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: bold;
-  margin-left: 10px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.favorite-btn, .watchlist-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.2s ease;
 }
 
 .favorite-btn {
-  background: none;
-  border: none;
   font-size: 1.2rem;
-  cursor: pointer;
-  color: #ccc;
-  margin-left: 10px;
-  padding: 0;
 }
 
-.favorite-btn.favorited {
+.watchlist-btn {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.favorite-btn.active {
   color: gold;
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
+.watchlist-btn.active {
+  color: var(--positive);
+  background-color: rgba(0, 184, 148, 0.1);
 }
 
 .card-body {
-  padding: 15px;
+  padding: 1rem;
 }
 
-.price-info {
+.price-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.75rem;
 }
 
-.price {
-  font-weight: bold;
-  font-size: 1.1rem;
+.price-group {
+  display: flex;
+  flex-direction: column;
 }
 
-.change {
-  font-weight: bold;
-}
-
-.positive {
-  color: var(--positive);
-}
-
-.negative {
-  color: var(--negative);
-}
-
-.details-link {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  padding: 8px;
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 4px;
-  font-weight: 500;
-}
-
-.details-link:hover {
-  opacity: 0.9;
+.label {
+  font-size: 0.8rem;
+  opacity: 0
 }

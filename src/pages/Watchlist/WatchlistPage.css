@@ -1,0 +1,143 @@
+.watchlist-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .watchlist-header {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .watchlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .watchlist-item {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+  }
+  
+  .watchlist-item-actions {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .watchlist-item-info {
+    margin-bottom: 1rem;
+  }
+  
+  .target-price, .notes {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .target-price span, .notes span {
+    opacity: 0.7;
+    margin-right: 0.5rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .edit-btn, .remove-btn {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .edit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+  }
+  
+  .remove-btn {
+    background-color: var(--negative);
+    color: white;
+    border: none;
+  }
+  
+  .edit-btn:hover, .remove-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .watchlist-edit-form {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .save-btn, .cancel-btn {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .save-btn {
+    background-color: var(--positive);
+    color: white;
+    border: none;
+  }
+  
+  .cancel-btn {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+  }
+  
+  .watchlist-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-left-color: var(--primary-color);
+    animation: spin 1
+  }
